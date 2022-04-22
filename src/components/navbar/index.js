@@ -305,14 +305,7 @@ export const Navbar = () => {
                                     Light
                                 </p>
                             )}
-                            {/* <p
-                                onClick={() => {
-                                    closeDropdownPopover();
-                                    setOpen();
-                                }}
-                                className='mnuFont flex items-center justify-end uppercase text-primary dark:text-secondary text-xs h-full w-full text-right pr-2'>
-                                Light/Dark
-                            </p> */}
+
                             <div className="flex flex-row items-center pt-3.5 h-full">
                                 <Toggle />
                             </div>
