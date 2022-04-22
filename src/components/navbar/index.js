@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Turn as Hamburger } from 'hamburger-react'
 import { createPopper } from "@popperjs/core";
-// import { HashLink } from 'react-router-hash-link';
 
 import { ThemeContext } from '../darkmode/themeContext';
 import { Fonts } from '../theme/fonts';
