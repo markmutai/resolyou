@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Navbar } from './components/navbar';
+import { Home } from "./pages/home";
+import { Profile } from "./pages/profile";
+import { Contact } from "./pages/contact";
+import { Footer } from './components/footer';
+import { ErrorPage } from "./pages/404"
+// import ClipLoader from "react-spinners/ClipLoader"
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <BrowserRouter>
+        <Navbar />
+        {/* <RouteToTop /> */}
+        {/* <AnimatePresence> */}
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/contact" element={<Contact />} />
+          {/* <Route exact path="/privacy" element={<Privacy />} /> */}
+          <Route exact path="/404" component={ErrorPage} />
+          <Route path="*" element={<ErrorPage to="/" replace />}
+          />
+        </Routes>
+        <Footer />
+        {/* </AnimatePresence> */}
+      </BrowserRouter>
     </div>
   );
 }
