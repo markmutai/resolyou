@@ -12,12 +12,12 @@ import { Images } from '../../assets/img';
 import { Intro } from "../intro";
 import { Buttons } from './../theme/buttons';
 
-import { Navbar } from "../navbar";
+// import { Navbar } from "../navbar";
 
 
 
 function NextArrow(props) {
-    const { className, style, onClick } = props;
+    const { style, onClick } = props;
 
     return (
         <div className="xsm:block md:block">
@@ -41,7 +41,7 @@ function NextArrow(props) {
 }
 
 function PrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { style, onClick } = props;
     return (
         <div className="xsm:block md:block">
             <div

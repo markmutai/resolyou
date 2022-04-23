@@ -124,7 +124,7 @@ export const ErrorPage = () => {
                                         className={`
                                         ${Buttons.btnAction}
                                         ${Styling.transitionStyleFaster} 
-                                        px-12 py-4 mt-8
+                                        px-12 h-16 mt-8
                                         `}>
                                         Take Me Back
                                     </button>

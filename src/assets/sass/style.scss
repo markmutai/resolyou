@@ -91,6 +91,7 @@ $time-2xl: 750ms;
 $primary:hsl(211, 100%, 20%);
 $secondary:hsl(207, 100%, 65%);
 $darkPrimary:hsl(211, 100%, 12%);
+$darkSecondary:hsl(207, 100%, 40%);
 
 
 /* Animations-x-FX------------------------------------------------------------------------------------*/
@@ -335,20 +336,18 @@ $widXpos: rem(40px);
 
 .slick-dots li button:before{
       font-size: rem(11px) !important;
-      color: $primary !important;
-      opacity: 1 !important;
+      color: $darkSecondary !important;
+      opacity: 0.75 !important;
       @include transition-animation($time-xl);
 }
 
 .slick-dots li.slick-active button:before{
-    font-size: rem(18px) !important;
+    font-size: rem(19px) !important;
     color:$secondary !important;
+    opacity: 1 !important;
     @include transition-animation($time-xl);
 }
 
-.btnFail{
-    background: hsl(10, 100%, 30%) !important;
-}
 
 /* variables--------------------------------------------------------------------------------------------*/
 

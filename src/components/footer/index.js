@@ -60,6 +60,7 @@ export const Footer = () => {
                             <a
                                 href="https://linchpin.co.ke/"
                                 target="_blank"
+                                rel="noreferrer"
                                 className="flex xsm:flex-col md:flex-row xsm:items-center xsm:w-full md:w-1/2 xsm:text-center md:text-left xsm:pt-3 xsm:pb-4 md:p-0 md:pb-0 border-secondary border-opacity-20 xsm:border-b md:border-none"
                             >
                                 <img

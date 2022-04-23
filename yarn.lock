@@ -1017,7 +1017,7 @@
     core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.16.3", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.16.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.17.9"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.17.9.tgz"
   integrity sha512-lSiBBvodq29uShpWGNbgFdKYNiFDo5/HIYsaCEY9ff4sb10x9jizo2+pRrSyF4jKZCXqgzuqBOQKbUm90gQwJg==
@@ -4396,20 +4396,10 @@ dedent@^0.7.0:
   resolved "https://registry.npmjs.org/dedent/-/dedent-0.7.0.tgz"
   integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
 
-deep-freeze@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/deep-freeze/-/deep-freeze-0.0.1.tgz#3a0b0005de18672819dfd38cd31f91179c893e84"
-  integrity sha1-OgsABd4YZygZ39OM0x+RF5yJPoQ=
-
 deep-is@^0.1.3, deep-is@~0.1.3:
   version "0.1.4"
   resolved "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz"
   integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
-
-deepmerge@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
-  integrity sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==
 
 deepmerge@^4.2.2:
   version "4.2.2"
@@ -4812,6 +4802,11 @@ electron-to-chromium@^1.4.84:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.107.tgz"
   integrity sha512-Huen6taaVrUrSy8o7mGStByba8PfOWWluHNxSHGBrCgEdFVLtvdQDBr9LBCF9Uci8SYxh28QNNMO0oC17wbGAg==
 
+emailjs-com@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-3.2.0.tgz#a53cb22f1bc433c701c84c53d8b56eefd5ce7111"
+  integrity sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==
+
 emittery@^0.8.1:
   version "0.8.1"
   resolved "https://registry.npmjs.org/emittery/-/emittery-0.8.1.tgz"
@@ -4904,13 +4899,6 @@ entities@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/entities/-/entities-2.2.0.tgz"
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
-
-equals@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/equals/-/equals-1.0.5.tgz#212062dde5e1a510d955f13598efcc6a621b6ace"
-  integrity sha1-ISBi3eXhpRDZVfE1mO/MamIbas4=
-  dependencies:
-    jkroso-type "1"
 
 error-ex@^1.2.0, error-ex@^1.3.1:
   version "1.3.2"
@@ -7725,11 +7713,6 @@ jest@^27.4.3:
     import-local "^3.0.2"
     jest-cli "^27.5.1"
 
-jkroso-type@1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/jkroso-type/-/jkroso-type-1.1.1.tgz#bc4ced6d6c45fe0745282bafc86a9f8c4fc9ce61"
-  integrity sha1-vEztbWxF/gdFKCuvyGqfjE/JzmE=
-
 jquery@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
@@ -9957,7 +9940,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.0, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -10028,17 +10011,6 @@ punycode@^2.1.0, punycode@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
-
-pure-react-carousel@^1.28.1:
-  version "1.28.1"
-  resolved "https://registry.yarnpkg.com/pure-react-carousel/-/pure-react-carousel-1.28.1.tgz#f4ab0a09e9a27ebe8f40bb8311d9c3e3b7aefef7"
-  integrity sha512-adOMhlGLxHiQxHwJvBgFJ6SXTM2UPuMv6tO10wsJzvQCdnCXcN5bRYIem5f55WQpwr9X0Bbb9ORw41KbGpAJWQ==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-    deep-freeze "0.0.1"
-    deepmerge "^2.2.1"
-    equals "^1.0.5"
-    prop-types "^15.6.2"
 
 q@^1.1.2:
   version "1.5.1"
@@ -10130,14 +10102,6 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
-react-async-script@^1.1.1:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-async-script/-/react-async-script-1.2.0.tgz#ab9412a26f0b83f5e2e00de1d2befc9400834b21"
-  integrity sha512-bCpkbm9JiAuMGhkqoAiC0lLkb40DJ0HOEJIku+9JDjxX3Rcs+ztEOG13wbrOskt3n2DTrjshhaQ/iay+SnGg5Q==
-  dependencies:
-    hoist-non-react-statics "^3.3.0"
-    prop-types "^15.5.0"
-
 react-cookie-consent@^7.4.1:
   version "7.4.1"
   resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-7.4.1.tgz#ce528eff28ef9b3742841496ffc1d6c092d05d29"
@@ -10205,14 +10169,6 @@ react-feather@^2.0.9:
   dependencies:
     prop-types "^15.7.2"
 
-react-google-recaptcha@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/react-google-recaptcha/-/react-google-recaptcha-2.1.0.tgz#9f6f4954ce49c1dedabc2c532347321d892d0a16"
-  integrity sha512-K9jr7e0CWFigi8KxC3WPvNqZZ47df2RrMAta6KmRoE4RUi7Ys6NmNjytpXpg4HI/svmQJLKR+PncEPaNJ98DqQ==
-  dependencies:
-    prop-types "^15.5.0"
-    react-async-script "^1.1.1"
-
 react-hcaptcha@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/react-hcaptcha/-/react-hcaptcha-0.1.1.tgz#da21311166f0153054624caf5784cfd977ef31f5"
@@ -10227,6 +10183,11 @@ react-is@^17.0.1:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
+
+react-recaptcha@^2.3.10:
+  version "2.3.10"
+  resolved "https://registry.yarnpkg.com/react-recaptcha/-/react-recaptcha-2.3.10.tgz#1f7a001f24ab7e1a323fcf1fd8644afecb56f7da"
+  integrity sha512-IyanbozsYCuHvTYDuskZTIEcRAMG/sdvAu5b29iQWoC8Kd3Zk9WGCv2oNxh6RfGHvSvgHAyaLjmC6ei/yMsJ7g==
 
 react-refresh@^0.11.0:
   version "0.11.0"

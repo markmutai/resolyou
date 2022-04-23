@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Turn as Hamburger } from 'hamburger-react'
 import { createPopper } from "@popperjs/core";
+// import { HashLink } from 'react-router-hash-link';
 
 import { ThemeContext } from '../darkmode/themeContext';
 import { Fonts } from '../theme/fonts';
@@ -20,13 +21,11 @@ export const Navbar = () => {
 
     const logoWidth = `xsm:w-[${logoSizes[0]}%] lg:w-[${logoSizes[1]}%] xl:w-[${logoSizes[2]}%] 2xl:w-[${logoSizes[3]}%]`;
 
-    const menuMath = [((100 - logoSizes[0]) / 2), ((100 - logoSizes[1]) / 2), ((100 - logoSizes[2]) / 2), ((100 - logoSizes[3]) / 2)];
+    const menuMath = [(100 - logoSizes[0]) / 2, (100 - logoSizes[1]) / 2, (100 - logoSizes[2]) / 2, (100 - logoSizes[3]) / 2];
 
-    // console.log(menuMath);
+    console.log(menuMath);
 
     const menuHalves = `h-full inline-flex items-center justify-center border-y xsm:w-[${menuMath[0]}%] lg:w-[${menuMath[1]}%] xl:w-[${menuMath[2]}%] 2xl:w-[${menuMath[3]}%]`
-
-    // console.log(menuHalves)
 
     const mobileSubStyle = `border-b border-secondary border-opacity-20 py-4`
 
@@ -156,7 +155,7 @@ export const Navbar = () => {
                 xsm:block 
                 md:hidden xsm:h-12 md:h-16 2xl:h-18 `}>
                     <div className={`${Styling.transitionStyleFast} ${Colors.menuItemColor} flex flex-row h-full xsm:w-full cursor-default `}>
-                        <div className="flex items-center w-[38.5%] relative z-[999] border-y border-primary dark:border-secondary border-opacity-10 dark:border-opacity-15">
+                        <div className="flex items-center w-[40%] relative z-[999] border-y border-primary dark:border-secondary border-opacity-10 dark:border-opacity-15">
                             <button
                                 className={`
                                     flex flex-row items-center w-auto
@@ -173,6 +172,9 @@ export const Navbar = () => {
                                         : openDropdownPopover();
                                 }}
                             >
+                                {/* <h1
+                                onClick={() => setOpen()}
+                            >Menu</h1> */}
                                 {theme === 'dark' ? (
                                     <Hamburger
                                         toggle={setOpen}
@@ -211,8 +213,6 @@ export const Navbar = () => {
                                 h-full w-full text-left `}>
                                 Menu
                             </p>
-
-                            {/* DropDown */}
                             <div className="mnuFont text-white absolute top-12 left-0 z-50">
                                 <ul
                                     ref={popoverDropdownRef}
@@ -272,9 +272,7 @@ export const Navbar = () => {
                                 </ul>
                             </div>
                         </div>
-
-                        {/* mobile_logo */}
-                        <div className={`flex items-center justify-center xsm:w-[24%] px-4 h-full`}>
+                        <div className={`flex items-center justify-center xsm:w-[20%] px-4 h-full`}>
                             <NavLink
                                 to="/"
                                 onClick={() => {
@@ -286,11 +284,9 @@ export const Navbar = () => {
                             </NavLink>
 
                         </div>
-
-                        {/* mobile_darkMode */}
                         <div className={`
                         flex flex-row items-center justify-end h-full pr-3
-                        border-y border-primary dark:border-secondary border-opacity-10 dark:border-opacity-15 xsm:w-[38.5%]
+                        border-y border-primary dark:border-secondary border-opacity-10 dark:border-opacity-15  xsm:w-[40%]
                         `}>
                             {theme === 'dark' ? (
                                 <p
@@ -305,7 +301,14 @@ export const Navbar = () => {
                                     Light
                                 </p>
                             )}
-
+                            {/* <p
+                                onClick={() => {
+                                    closeDropdownPopover();
+                                    setOpen();
+                                }}
+                                className='mnuFont flex items-center justify-end uppercase text-primary dark:text-secondary text-xs h-full w-full text-right pr-2'>
+                                Light/Dark
+                            </p> */}
                             <div className="flex flex-row items-center pt-3.5 h-full">
                                 <Toggle />
                             </div>

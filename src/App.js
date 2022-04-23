@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Navbar } from './components/navbar';
 import { Home } from "./pages/home";
 import { Profile } from "./pages/profile";
-import { Contact } from "./pages/contact";
+import Contact from "./pages/contact";
 import { Footer } from './components/footer';
 import { ErrorPage } from "./pages/404"
 // import ClipLoader from "react-spinners/ClipLoader"
