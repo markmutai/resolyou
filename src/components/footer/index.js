@@ -7,6 +7,10 @@ import { Styling } from '../theme/styling';
 import { Images } from '../../assets/img';
 
 export const Footer = () => {
+    const getCurrentYear = () => {
+        return new Date().getFullYear();
+    };
+
     return (
         <>
             <div
@@ -26,13 +30,12 @@ export const Footer = () => {
                                         className='xsm:w-32 2xl:w-36 xsm:mb-2 xl:mb-3'
                                     />
                                 </div>
-                                <div className="w-full">
+                                <div className={`w-full text-white xsm:text-center md:text-left tracking-smidgePlus xsm:leading-3 lg:leading-4 opacity-90 ${Fonts.footerFont}`}>
                                     <p
-                                        className={`text-white xsm:text-center md:text-left tracking-smidgePlus xsm:leading-3 lg:leading-4 opacity-90 ${Fonts.footerFont}`}>
-                                        Copyright &copy; 2022, ResolYou
-                                        <br />
-                                        All Rights Reserved.
+                                        className={``}>
+                                        Copyright &copy; {getCurrentYear()}, ResolYou
                                     </p>
+                                    <p className='text-lightSecondary md:-mt-0.5'>All Rights Reserved. </p>
                                 </div>
                             </div>
                             <div
@@ -40,22 +43,34 @@ export const Footer = () => {
                                 <div
                                     className="w-full">
                                     <p
-                                        className='text-white xsm:border-t border-secondary border-opacity-10 md:border-none uppercase xsm:text-center md:text-right opacity-90 xsm:text-3micro md:text-xs xl:text-2xs 2xl:text-sm tracking-smidge xsm:leading-4 md:leading-5 2xl:leading-6 xsm:mt-4 md:mt-0 xsm:pt-4 md:pt-0'>
+                                        className={`
+                                       text-white uppercase opacity-90 tracking-smidge
+                                        xsm:border-t border-secondary border-opacity-10 md:border-none
+                                         xsm:text-center xsm:leading-4 xsm:text-3micro xsm:mt-4 xsm:pt-4
+                                         md:text-right md:text-xs md:leading-5 md:mt-0 md:pt-0
+                                         xl:text-2xs 
+                                         2xl:text-sm 2xl:leading-6
+                                         `}>
                                         1<sup>st</sup> Floor. Test Address, ABCD PLACE
                                         <br />
                                         Waiyaki Way, Westlands
                                         <br />
                                         P.O. Box 123456–00200
-                                        <br />
-                                        Nairobi,
-                                        <br />
-                                        Kenya.
+                                        <p className='text-lightSecondary md:mt-1'>
+                                            Nairobi,
+                                        </p>
+                                        <p className='text-lightSecondary md:-mt-2'>
+                                            Kenya.
+                                        </p>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div
-                            className={`footerLinks flex xsm:flex-col md:flex-row text-secondary xsm:tracking-wide md:tracking-wider w-full md:pt-5 xsm:mt-4 md:mt-10 border-t border-secondary border-opacity-10 ${Fonts.footerFont}`}
+                            className={`
+                            ${Fonts.footerFont}
+                            footerLinks flex xsm:flex-col md:flex-row text-secondary xsm:tracking-wide md:tracking-wider w-full md:pt-5 xsm:mt-4 md:mt-10 border-t border-secondary border-opacity-10 
+                            `}
                         >
                             <a
                                 href="https://linchpin.co.ke/"
@@ -64,8 +79,8 @@ export const Footer = () => {
                                 className="flex xsm:flex-col md:flex-row xsm:items-center xsm:w-full md:w-1/2 xsm:text-center md:text-left xsm:pt-3 xsm:pb-4 md:p-0 md:pb-0 border-secondary border-opacity-20 xsm:border-b md:border-none"
                             >
                                 <img
-                                    src={Images.linchpin}
                                     alt="Linchpin Ltd Kenya"
+                                    src={Images.linchpin}
                                     className='xsm:block md:hidden xsm:my-2 xl:mt-0.5 xsm:w-5 xl:w-3.5'
                                 />
                                 <p
@@ -75,8 +90,8 @@ export const Footer = () => {
                                 </p>
                                 <span>
                                     <img
-                                        src={Images.linchpin}
                                         alt="Linchpin Ltd Kenya"
+                                        src={Images.linchpin}
                                         className='xsm:hidden md:block xsm:ml-1 xl:ml-2 xsm:mt-0 xl:-mt-1.5 xsm:w-3 xl:w-3.5'
                                     />
                                 </span>

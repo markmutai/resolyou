@@ -47,11 +47,12 @@ module.exports = {
     extend: {
       colors: {
         primary: "hsl(211, 100%, 18%)", //#00346A
-        secondary: "hsl(210, 100%, 65%)",//#64BCD6
-        lightSecondary: "hsl(210, 100%, 75%)",
+        secondary: "hsl(211, 100%, 62%)",//#64BCD6
+        lightSecondary: "hsl(211, 100%, 76%)",
         darkPrimary: "hsl(211, 100%, 7%)",
         darkerPrimary: "hsl(211, 100%, 5%)",
-        darkSecondary: "hsl(207, 100%, 45%)",
+        darkSecondary: "hsl(210, 100%, 40%)",
+        darkerSecondary: "hsl(210, 100%, 30%)",
         // sun_light: "hsl(50, 100%, 90%)",
         sun_yellow: "hsl(50, 100%, 50%)",
       },
@@ -109,6 +110,7 @@ module.exports = {
         "4xl": "1.65rem",
         "5xl": "1.875rem",
         "6xl": "3rem",
+        "7xl": "10rem",
       },
       height: {
         4.5: "1.15rem",

@@ -23,11 +23,11 @@ export const Navbar = () => {
 
     const menuMath = [(100 - logoSizes[0]) / 2, (100 - logoSizes[1]) / 2, (100 - logoSizes[2]) / 2, (100 - logoSizes[3]) / 2];
 
-    console.log(menuMath);
+    // console.log(menuMath);
 
     const menuHalves = `h-full inline-flex items-center justify-center border-y xsm:w-[${menuMath[0]}%] lg:w-[${menuMath[1]}%] xl:w-[${menuMath[2]}%] 2xl:w-[${menuMath[3]}%]`
 
-    const mobileSubStyle = `border-b border-secondary border-opacity-20 py-4`
+    const mobileSubStyle = `flex justify-start items-center text-left py-5 pl-4 pr-10 hover:bg-secondary border-b border-secondary border-opacity-20`
 
     const { theme, setTheme } = React.useContext(ThemeContext);
 
@@ -72,7 +72,7 @@ export const Navbar = () => {
                     <ul className={`
                     ${Styling.transitionStyleFast} 
                     ${Colors.menuItemColor}
-                    cursor-default inline-flex items-center justify-center list-none w-full h-full text-white  xsm:text-sm 
+                    cursor-default inline-flex items-center justify-center list-none w-full h-full text-white xsm:text-sm 
                     lg:text-base 
                     2xl:text-md`}>
 
@@ -213,15 +213,15 @@ export const Navbar = () => {
                                 h-full w-full text-left `}>
                                 Menu
                             </p>
-                            <div className="mnuFont text-white absolute top-12 left-0 z-50">
+                            <div className="mnuFont text-white absolute top-12 left-0">
                                 <ul
                                     ref={popoverDropdownRef}
                                     className={
                                         (dropdownPopoverShow ? "block " : "hidden ") +
-                                        `${Styling.transitionStyleFast} bg-primary dark:bg-black z-50 list-none text-left text-2sm+ rounded-br-lg shadow-2xl space-y-2 pt-1 pb-2 pl-4 w-40`
+                                        `${Styling.transitionStyleFaster} bg-primary dark:bg-black z-50 list-none text-left text-2sm+ rounded-br-lg shadow-2xl w-40`
                                     }
                                 >
-                                    <li className={`${mobileSubStyle}`}>
+                                    <li>
                                         <NavLink
                                             to="/"
                                             onClick={() => {
@@ -229,11 +229,11 @@ export const Navbar = () => {
                                                 setOpen();
 
                                             }}
-                                            className={({ isActive }) => (isActive ? "text-secondary" : `hover:text-secondary`) + `${Styling.transitionStyle}`}>
+                                            className={({ isActive }) => (isActive ? "text-secondary" : `hover:text-secondary`) + `${Styling.transitionStyleFaster} ${mobileSubStyle}`}>
                                             Home
                                         </NavLink>
                                     </li>
-                                    <li className={`${mobileSubStyle}`}>
+                                    <li>
                                         <NavLink
                                             to="/profile"
                                             onClick={() => {
@@ -241,11 +241,11 @@ export const Navbar = () => {
                                                 setOpen();
 
                                             }}
-                                            className={({ isActive }) => (isActive ? "text-secondary" : `hover:text-secondary`) + `${Styling.transitionStyle}`}>
+                                            className={({ isActive }) => (isActive ? "text-secondary" : `hover:text-secondary`) + `${Styling.transitionStyleFaster} ${mobileSubStyle}`}>
                                             Profiles
                                         </NavLink>
                                     </li>
-                                    <li className={`${mobileSubStyle}`}>
+                                    <li>
                                         <NavLink
                                             to="/clients"
                                             onClick={() => {
@@ -253,11 +253,11 @@ export const Navbar = () => {
                                                 setOpen();
 
                                             }}
-                                            className={({ isActive }) => (isActive ? "text-secondary" : `hover:text-secondary`) + `${Styling.transitionStyle}`}>
+                                            className={({ isActive }) => (isActive ? "text-secondary" : `hover:text-secondary`) + `${Styling.transitionStyleFaster} ${mobileSubStyle}`}>
                                             Clients
                                         </NavLink>
                                     </li>
-                                    <li className={`py-4`}>
+                                    <li>
                                         <NavLink
                                             to="/contact"
                                             onClick={() => {
@@ -265,7 +265,7 @@ export const Navbar = () => {
                                                 setOpen();
 
                                             }}
-                                            className={({ isActive }) => (isActive ? "text-secondary" : `hover:text-secondary`) + `${Styling.transitionStyle}`}>
+                                            className={({ isActive }) => (isActive ? "text-secondary" : `hover:text-secondary`) + `${Styling.transitionStyleFaster} flex justify-start text-left hover:bg-secondary pt-5 pb-6 pl-4 pr-10`}>
                                             Contact
                                         </NavLink>
                                     </li>
@@ -280,10 +280,11 @@ export const Navbar = () => {
                                     setOpen();
                                 }}
                             >
-                                <img src={Images.logoMin} alt="ResolYou" className='' />
+                                <img src={Images.logoMin} alt="ResolYou" className='xsm:w-[70px]' />
                             </NavLink>
-
                         </div>
+
+                        {/* dark_mode_switch */}
                         <div className={`
                         flex flex-row items-center justify-end h-full pr-3
                         border-y border-primary dark:border-secondary border-opacity-10 dark:border-opacity-15  xsm:w-[40%]

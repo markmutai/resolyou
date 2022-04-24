@@ -132,7 +132,13 @@ export default class SimpleSlider extends Component {
         lg:w-1/2 lg:px-32 lg:py-14
         xl:px-12 
         2xl:px-16 
-        `
+        `;
+
+        const smImgStyle = `
+        mobileImage absolute opacity-[35%] dark:opacity-50 p-6 w-full h-full items-center justify-center z-20
+        xsm:flex 
+        md:hidden 
+        `;
 
         return (
             <div
@@ -166,7 +172,14 @@ export default class SimpleSlider extends Component {
 
                             {/* carousel_detail */}
                             <div className={`${carDetail}`}>
-                                <div className="flex-col">
+                                <div className={`${smImgStyle}`}>
+                                    <img
+                                        src={Images.conflictImg}
+                                        alt="Conflict Resolution"
+                                        className={`w-full -ml-20`}
+                                    />
+                                </div>
+                                <div className="flex-col z-40">
                                     <h2 className={`${Fonts.sectionTitleFont}`}>
                                         Conflict Resolution
                                     </h2>
@@ -198,6 +211,13 @@ export default class SimpleSlider extends Component {
 
                             {/* carousel_detail */}
                             <div className={`${carDetail}`}>
+                                <div className={`${smImgStyle}`}>
+                                    <img
+                                        src={Images.mediationImg}
+                                        alt="Mediation Specialist"
+                                        className={`w-full -ml-20`}
+                                    />
+                                </div>
                                 <div className="flex-col">
                                     <h2 className={`${Fonts.sectionTitleFont}`}>
                                         Mediation Specialist
@@ -224,12 +244,19 @@ export default class SimpleSlider extends Component {
 
                             {/* carousel_detail */}
                             <div className={`${carDetail}`}>
+                                <div className={`${smImgStyle}`}>
+                                    <img
+                                        src={Images.trainingImg}
+                                        alt="Conflict Training"
+                                        className={`w-full -ml-20`}
+                                    />
+                                </div>
                                 <div className="flex-col">
                                     <h2 className={`${Fonts.sectionTitleFont}`}>
                                         Conflict Resolution Training
                                     </h2>
                                     <p className={`${Fonts.bodyFont}`}>
-                                        This 2--day conflict resolution training programme will teach and train others how to more confidently deal with workplace conflict situations. Participants will discover how conflict situations can be turned around into opportunities, they will explore and practice a conflict resolution process to more successfully handle workplace conflict.  This training arms participants to:
+                                        This 2-day conflict resolution training programme will teach and train others how to more confidently deal with workplace conflict situations. Participants will discover how conflict situations can be turned around into opportunities, they will explore and practice a conflict resolution process to more successfully handle workplace conflict.  This training arms participants to:
                                     </p>
                                     <br />
                                     <ul className={`

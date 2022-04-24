@@ -200,20 +200,7 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
     opacity: 1;
-    // background-blend-mode: overlay;
-    // -webkit-mask-image: -webkit-gradient(
-    //     linear,
-    //     left top,
-    //     left bottom,
-    //     from(rgba(0, 0, 0, 1)),
-    //     to(rgba(0, 0, 0, 1))
-    // );
-    // mask-image: linear-gradient(
-    //     180deg,
-    //     rgba(0, 0, 0, 1) 0%,
-    //     rgba(0, 0, 0, 1) 60%,
-    //     rgba(0, 0, 0, 1) 100%
-    // );
+    
 }
 
 .ptn_drk::after{
@@ -254,10 +241,6 @@ body {
     box-shadow:inset 1px 4px 4px hsla(0, 0%, 0%, .25), 1px 6px 8px hsla(0, 0%, 0%, .2) ;
 }
 
-// .lightSky{
-//     background: url('../img/light_sky.png');
-//     width: 100% !important;
-// }
 
 /*
 
@@ -308,6 +291,10 @@ $dotSize: rem(45px) !important;
 $widXpos: rem(40px);
 
 /*------------------------------------------------------------------------------------------------------*/
+
+.mobileImage{
+    mix-blend-mode: soft-light;
+}
 
 .slick-slider{
     position: relative !important;

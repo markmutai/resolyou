@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BarLoader } from 'react-spinners';
+import { ThemeContext } from '../../components/darkmode/themeContext';
 
 import { Fonts } from '../../components/theme/fonts';
 import { Containers } from '../../components/theme/containers';
 import { Styling } from '../../components/theme/styling';
 import { Images } from '../../assets/img';
-import { ThemeContext } from '../../components/darkmode/themeContext';
 
 export const Profile = () => {
     const { theme } = React.useContext(ThemeContext);
@@ -29,7 +29,11 @@ export const Profile = () => {
                     ${Styling.flexCenter}
                     relative z-20
                     `}>
-                        <div className={`${[Containers.glsFx, Containers.carouselContainer, Containers.mainContainer]}`}>
+                        <div className={`
+                        ${Containers.glsFx} 
+                        ${Containers.carouselContainer} 
+                        ${Containers.mainContainer}
+                        `}>
                             <motion.div
                                 className={`${Styling.flexCenter} ${Containers.carouselSubContainer}`}
                                 transition={{
@@ -52,7 +56,6 @@ export const Profile = () => {
                                     <BarLoader
                                         color={'hsl(207, 100%, 65%)'}
                                         loading={loading}
-                                        // css={override}
                                         size={50}
                                         speedMultiplier='0.9'
                                     />
@@ -60,13 +63,11 @@ export const Profile = () => {
                                     <BarLoader
                                         color={'hsl(211, 100%, 18%)'}
                                         loading={loading}
-                                        // css={override}
                                         size={50}
                                         speedMultiplier='0.9'
                                     />
                                 )}
                             </motion.div>
-                            {/* </div> */}
                         </div>
                     </div>
                     :

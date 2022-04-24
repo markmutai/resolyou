@@ -47,7 +47,7 @@ export const Fonts = {
     bodyFont:
         `
         bodyText text-gray-800 dark:text-gray-200 text-justify 
-        xsm:text-2xs xsm:leading-[1rem]
+        xsm:text-3xs xsm:leading-[1rem]
         md:text-4xs md:leading-4
         lg:leading-5
         xl:text-4xs xl:leading-4.5
@@ -57,7 +57,7 @@ export const Fonts = {
 
     inputFont:
         `
-        bodyText text-gray-900 dark:text-gray-50 
+        bodyText placeholder:text-gray-700 placeholder:dark:text-gray-200 placeholder:opacity-80 text-black dark:text-white
         xsm:text-sm 
         lg:text-sm+ 
         2xl:text-4sm+

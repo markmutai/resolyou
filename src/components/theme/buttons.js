@@ -37,7 +37,7 @@ export const Buttons = {
 
     btnAction:
         `
-        mnuFont uppercase rounded-[3px] bg-secondary dark:bg-darkSecondary hover:bg-primary dark:hover:bg-primary border-b-6 border-black border-opacity-15 dark:border-opacity-30 ${btnHeight} ${btnTxt} 
+        mnuFont uppercase rounded-[3px] bg-secondary dark:bg-darkSecondary hover:bg-primary dark:hover:bg-primary border-b-6 border-black border-opacity-15 dark:border-opacity-40 ${btnHeight} ${btnTxt} 
         `
     ,
 

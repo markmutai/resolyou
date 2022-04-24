@@ -12,7 +12,7 @@ const containerDimensions = `
 
 const carouselDimensions = `
     w-full 
-    xsm:h-[30rem] 
+    xsm:h-[31.5rem] 
     md:h-[41rem] 
     lg:h-105 
     2xl:h-115
